@@ -1,0 +1,228 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.convas-wrapper {
+  width: 100%;
+  height: 300px;
+  clip-path: polygon(0 0, 100% 0, 100% 46%, 0% 100%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+
+  padding-top: 100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: 40px;
+}
+
+.nav ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  left: 20px;
+  list-style-type: none;
+}
+
+.profile-pic {
+  margin: 0 auto;
+  width: 200px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  margin: 0 30px;
+  text-decoration: none;
+  color: white;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#canvas {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  z-index: 1;
+}
+
+#canv {
+  position: absolute;
+  z-index: 0;
+}
+
+.title {
+  position: relative;
+  top: 200px;
+  left: 100px;
+  z-index: 3;
+  color: white;
+  font-size: 30px;
+}
+
+.quotes {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  letter-spacing: 0.2rem;
+}
+
+.whoami {
+  font-weight: bold;
+}
+
+.wtido {
+  margin-top: 50px;
+  font-size: 25px;
+  letter-spacing: 0px;
+}
+
+span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: rgb(253, 87, 87);
+  }
+  49% {
+    background-color: rgb(255, 31, 31);
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgb(255, 126, 126);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-bottom: 300px;
+}
+
+svg {
+  position: absolute;
+  top: -300px;
+}
+
+.recent-work {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 200px;
+  background-color: #f5f5f5;
+}
+
+.work-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: black;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #f0492b 0%, #a357ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.axis-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+}
+.axis-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.cards {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.proj-card {
+  position: relative;
+  width: 45%;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 50px 2.5%;
+}
+
+.proj-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.proj-card > img:last-of-type {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+.proj-card:hover > img:last-of-type {
+  opacity: 0;
+}
+
+.proj-card > img {
+  position: absolute;
+}
