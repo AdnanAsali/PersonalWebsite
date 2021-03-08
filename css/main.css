@@ -599,7 +599,7 @@ header.is-visible {
 
 /* RESPONSIVE SECTION */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .cards {
     flex-direction: column;
     justify-content: center;
@@ -620,21 +620,21 @@ header.is-visible {
 }
 @media only screen and (max-width: 600px) {
   .container {
-    margin-top: 25vh;
+    margin-top: 25vh !important;
   }
 }
 @media only screen and (max-width: 500px) {
   .container {
-    margin-top: 35vh;
+    margin-top: 35vh !important;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 300px), (max-width: 400px) {
   .container {
-    margin-top: 45vh;
+    margin-top: 35vh !important;
   }
 }
 @media only screen and (max-width: 300px) {
   .container {
-    margin-top: 55vh;
+    margin-top: 55vh !important;
   }
 }
