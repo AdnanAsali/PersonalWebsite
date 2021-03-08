@@ -8,7 +8,7 @@ body {
 
 .canvas-wrapper {
   width: 100%;
-  height: 50vh;
+  height: 35vh;
   clip-path: polygon(0 0, 100% 0, 100% 46%, 0% 100%);
   position: absolute;
   z-index: -1;
