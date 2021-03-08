@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/animation.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="./images/favicon.png" type="image" sizes="16x16" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
@@ -17,18 +21,18 @@
       <div class="profile-pic">
         <img src="./images/profilePic2.png" alt="" />
       </div>
-      <div class="convas-wrapper">
-        <canvas id="canv" width="32" height="32"></canvas>
+      <div class="canvas-wrapper" style="top: 0">
+        <canvas class="canv" width="32" height="32"></canvas>
       </div>
     </div>
 
     <div class="container">
       <div class="quotes">
         <div class="whoami">
-          I am <span class="typed-text"></span
+          <div>Hello, My name is <span class="myname">Adnan Asali</span></div>
+          and I am <span class="typed-text"></span
           ><span class="cursor">&nbsp;</span>
         </div>
-        <div class="wtido">I build solutions, and I love what I do</div>
       </div>
 
       <div class="recent-work">
@@ -49,22 +53,38 @@
             <img src="./images/axis.png" alt="" />
           </div>
         </div>
-        <div class="cards">
+        <div id="recentWork" class="cards">
           <div class="proj-card">
-            <img src="./images/projects/football.png" alt="" />
-            <img src="./images/projects/salehuntWeb.png" alt="" />
+            <a href="https://master.d228v6w00aesgq.amplifyapp.com/">
+              <img src="./images/projects/salehuntWeb2.png" alt="" />
+            </a>
+            <a href="https://master.d228v6w00aesgq.amplifyapp.com/"
+              ><img src="./images/projects/salehuntWeb.png" alt=""
+            /></a>
           </div>
           <div class="proj-card">
-            <img src="./images/projects/football.png" alt="" />
-            <img src="./images/projects/terhalWeb.png" alt="" />
+            <a href="https://terhal-6a78f.firebaseapp.com/">
+              <img src="./images/projects/terhalWeb2.png" alt="" />
+            </a>
+            <a href="https://terhal-6a78f.firebaseapp.com/">
+              <img src="./images/projects/terhalWeb.png" alt="" />
+            </a>
           </div>
           <div class="proj-card">
-            <img src="./images/projects/football.png" alt="" />
-            <img src="./images/projects/youtubeReact.png" alt="" />
+            <a href="https://github.com/AdnanAsali/Jumla-Dashboard/">
+              <img src="./images/projects/jumlaDash.png" alt="" />
+            </a>
+            <a href="https://github.com/AdnanAsali/Jumla-Dashboard/">
+              <img src="./images/projects/jumlaDash2.png" alt="" />
+            </a>
           </div>
           <div class="proj-card">
-            <img src="./images/projects/football.png" alt="" />
-            <img src="./images/projects/youtubeReact.png" alt="" />
+            <a href="#recentWork">
+              <img src="./images/projects/selenaTech2.png" alt="" />
+            </a>
+            <a href="#recentWork">
+              <img src="./images/projects/selenaTech1.png" alt="" />
+            </a>
           </div>
         </div>
         <svg
@@ -79,9 +99,156 @@
           ></path>
         </svg>
       </div>
+
+      <div class="fav-tech">
+        <div class="fav-title">
+          Favorite Technologies
+          <div class="axis-icon">
+            <img src="./images/teh.png" alt="" />
+          </div>
+        </div>
+
+        <div class="skill-bars">
+          <div class="bar inline-photo show-on-scroll">
+            <div class="info">
+              <span>HTML</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar inline-photo show-on-scroll">
+            <div class="info">
+              <span>CSS</span>
+            </div>
+            <div class="progress-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar inline-photo show-on-scroll">
+            <div class="info">
+              <span>JS</span>
+            </div>
+            <div class="progress-line js">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar inline-photo show-on-scroll">
+            <div class="info">
+              <span>React</span>
+            </div>
+            <div class="progress-line react">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar inline-photo show-on-scroll">
+            <div class="info">
+              <span>Google Flutter</span>
+            </div>
+            <div class="progress-line flutter">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar inline-photo show-on-scroll">
+            <div class="info">
+              <span>MySQL</span>
+            </div>
+            <div class="progress-line mysql">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar inline-photo show-on-scroll">
+            <div class="info">
+              <span>MongoDB</span>
+            </div>
+            <div class="progress-line mongo">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar inline-photo show-on-scroll">
+            <div class="info">
+              <span>Firebase</span>
+            </div>
+            <div class="progress-line firebase">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar inline-photo show-on-scroll">
+            <div class="info">
+              <span>python</span>
+            </div>
+            <div class="progress-line python">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- TESTING THE ANIMATIONS -->
+    <div class="canvas-wrapper newClip" style="bottom: 0">
+      <canvas class="canv" width="32" height="32"></canvas>
+    </div>
+    <!--Waves Container-->
+
+    <div class="footer">
+      <div class="logo-bottom">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <div class="contact-btn">
+        <a href="mailto:aasali40@gmail.com">Say Hello</a>
+      </div>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/adnanasali/">
+          <img src="./images/icons/linkedin.png" alt="" />
+        </a>
+        <a href="https://www.facebook.com/adnan.asali/">
+          <img src="./images/icons/facebook.png" alt="" />
+        </a>
+        <a href="https://github.com/AdnanAsali">
+          <img src="./images/icons/github.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <div>
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(255,255,255,0.7"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(255,255,255,0.5)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(255,255,255,0.3)"
+          />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
 
     <script src="./js/main.js"></script>
   </body>
