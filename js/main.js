@@ -54,9 +54,9 @@ const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = [
+  "a UX/UI Designer",
   "a Full-Stack Developer",
-  "a Problem Solver",
-  "also a Coach",
+  // "also a Coach",
 ];
 const typingDelay = 50;
 const erasingDelay = 50;
