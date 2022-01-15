@@ -225,17 +225,15 @@ a {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .proj-card {
   position: relative;
-  width: calc(100% / 2 - 20px);
+  width: 50%;
   padding-bottom: 25%;
-  border-radius: 10px;
   overflow: hidden;
-  margin: 50px 10px;
 }
 
 .proj-card img {
